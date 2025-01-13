@@ -1,0 +1,1 @@
+drop TABLE zoho_leads;

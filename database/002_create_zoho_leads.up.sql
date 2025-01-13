@@ -1,0 +1,21 @@
+CREATE  TABLE zoho_leads (
+    "Record Id" TEXT,
+    "Last Name" TEXT,
+    Age INT,
+    City TEXT,
+    Country TEXT,
+    "Created By.id" TEXT,
+    "Created By" TEXT,
+    Demo_Booked BOOLEAN,
+    Email TEXT,
+    "First Name" TEXT,
+    "Lead Name" TEXT,
+    "Lead Status" TEXT,
+    Mobile TEXT,
+    Phone TEXT,
+    State TEXT,
+    "Zip Code" TEXT,
+    district TEXT,
+    gender TEXT,
+    school_name TEXT
+);
