@@ -4,7 +4,6 @@ import (
 	"net/http"
 	vapicontroller "tutree-vapi/controllers/vapi"
 	"tutree-vapi/controllers/zoho"
-	"tutree-vapi/webhook"
 
 	"github.com/gin-gonic/gin"
 )
@@ -18,9 +17,7 @@ func AddRoutes(router *gin.RouterGroup) {
 	router.GET("/", vapicontroller.RouteHit)
 	router.GET("/zoho-leads", vapicontroller.GetPhoneOfColdLeads)
 	router.GET("/call-details", vapicontroller.GetCallDetails)
-	router.POST("/server-messages", webhook.WebhookHandler)
 	router.OPTIONS("/server-messages", optionsHandler)
-	router.POST("/websocket/send-link", webhook.HandleToSendLinkViaSMS)
 	router.OPTIONS("/websocket/send-link", optionsHandler)
 	router.GET("/leads", zoho.GetZohoLeads)
 }
